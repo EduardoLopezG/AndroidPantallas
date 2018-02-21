@@ -1,0 +1,44 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eduardo.pantallasproyecto.UbicationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/iniciobackground">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="@dimen/translationy_main_fragment">
+
+            <Button
+                android:layout_width="@dimen/buttonmainscreen_size"
+                android:layout_height="@dimen/buttonmainscreenwidth_size"
+                android:id="@+id/btn_rooms"
+                android:text="Habitaciones"
+                />
+            <Button
+                android:layout_width="@dimen/buttonmainscreen_size"
+                android:layout_height="@dimen/buttonmainscreenwidth_size"
+                android:id="@+id/btn_reservation"
+                android:text="Reservación"
+                android:layout_toRightOf="@id/btn_rooms"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonmainscreenwidth_size"
+                android:id="@+id/btn_meetus"
+                android:text="Conócenos"
+                android:layout_below="@id/btn_rooms"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
